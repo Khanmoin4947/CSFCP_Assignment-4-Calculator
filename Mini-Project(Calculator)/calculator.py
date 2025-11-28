@@ -17,7 +17,7 @@ elif choice==3:
 elif choice==4:
     print(number1/number2)
 
-elif choice == 5:
+elif choice==5:
     print("Goodbye!")
 
 else:
