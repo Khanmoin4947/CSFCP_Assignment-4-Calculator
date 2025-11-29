@@ -1,14 +1,51 @@
-# CSFCP_Assignment-4-Calculator
-This repo is for the Computer Science Fundamentals & Career Pathway Assignment number 4 In which i made a calculator
-
 # Simple Python Calculator
 
-A beginner-friendly calculator built using Python as part of Assignment 4.
+This repository contains a mini project built as part of **Assignment 4 – Tools for Programming, Learning, and Collaboration** for the course **Computer Science Fundamentals & Career Pathways (ETCCCP105)**.
 
-## Features
-- Addition, subtraction, multiplication, division
-- Error handling
-- Simple console interface
+The project is a **console-based calculator** implemented in Python and developed using **Visual Studio Code**, **Git**, and **GitHub**.
 
-## How to Run
-run mini-project(calculator)/calculator.py
+---
+
+## 🎯 Project Objectives
+
+- Implement a basic calculator using Python.
+- Practice using VS Code as an IDE.
+- Learn and apply Git commands for version control.
+- Host a complete mini project on GitHub with proper documentation.
+- Follow a simple and professional repository structure.
+
+---
+
+## 🧮 Features
+
+The calculator currently supports:
+
+- Addition
+- Subtraction
+- Multiplication
+- Division (with divide-by-zero handling)
+- Input validation for numeric values
+- Menu-driven console interface
+- Option to perform repeated operations until exit
+
+---
+
+## 🛠️ Technologies & Tools Used
+
+- **Programming Language**: Python
+- **IDE/Editor**: Visual Studio Code
+- **Version Control**: Git
+- **Repository Hosting**: GitHub
+- **Documentation**: Markdown (`README.md`, files inside `docs/`)
+
+---
+
+## 📁 Repository Structure
+
+```text
+.
+├── Mini-Project(Calculator)/calculator.py               
+├── README.md             
+├── .gitignore           
+└── docs/
+    └── project_overview.md

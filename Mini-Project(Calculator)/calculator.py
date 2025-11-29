@@ -1,24 +1,62 @@
-number1=int(input("Enter your first number:- "))
-number2=int(input("Enter your Second number:- "))
+def add(a, b):
+    return a + b
 
-print("Choose the Operation you want to perfome")
+def subtract(a, b):
+    return a - b
 
-choice=int(input("\n 1.Add \n 2.Substract \n 3.Multiply \n 4.Divide \n 5.Exit \n"))
+def multiply(a, b):
+    return a * b
 
-if choice==1:
-    print(number1+number2)
+def divide(a, b):
+    if b == 0:
+        return "Error: Cannot divide by zero."
+    return a / b
 
-elif choice==2:
-    print(number1-number2)
 
-elif choice==3:
-    print(number1*number2)
+def print_menu():
+    print("\n=== Simple Python Calculator ===")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+    print("5. Exit")
 
-elif choice==4:
-    print(number1/number2)
 
-elif choice==5:
-    print("Goodbye!")
+def get_number(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Invalid input. Please enter a numeric value.")
 
-else:
-    print("Invalid option. Try again.")
+
+def main():
+    while True:
+        print_menu()
+        choice = input("Enter your choice (1-5): ")
+
+        if choice == "5":
+            print("Exiting calculator. Thank you!")
+            break
+
+        if choice not in ("1", "2", "3", "4"):
+            print("Invalid choice. Please select a number between 1 and 5.")
+            continue
+
+        num1 = get_number("Enter first number: ")
+        num2 = get_number("Enter second number: ")
+
+        if choice == "1":
+            result = add(num1, num2)
+            operation = "+"
+        elif choice == "2":
+            result = subtract(num1, num2)
+            operation = "-"
+        elif choice == "3":
+            result = multiply(num1, num2)
+            operation = "*"
+        elif choice == "4":
+            result = divide(num1, num2)
+            operation = "/"
+
+        print(f"\nResult: {num1} {operation} {num2} = {result}")
